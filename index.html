@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              body: "#EDF0FF",
+              button: "#2256FA",
+              second_cont: "#EFEFEF",
+              underline: "#2256FA",
+              bluee: "#010334",
+              button_blue: "#2256FA",
+              light_blue: "#F6F9FA",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="">
+    <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+    <!-- navbar -->
+    <div
+      class="w-full h-[70px] lg:h-[90px] bg-white flex items-center justify-between px-5 sticky top-0 z-50"
+    >
+      <!-- logo -->
+      <div class="">
+        <h1
+          class="text-2xl font-extrabold font-sans border-2 border-black px-2 lg:ml-5"
+        >
+          <a href="./index.html">JIMDO</a>
+        </h1>
+      </div>
+      <!-- dropdown -->
+      <div
+        class="flex list-none w-[700px] items-center h-full font-medium hidden lg:flex"
+      >
+        <li>
+          <button
+            id="dropdownDefault"
+            data-dropdown-toggle="dropdown"
+            class="text-black font-medium text-md px-8 py-2.5 text-center inline-flex items-center"
+            type="button"
+          >
+            Products
+            <svg
+              class="ml-2 w-4 h-4"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <!-- Dropdown menu -->
+          <div
+            id="dropdown"
+            class="hidden z-10 w-72 bg-white rounded divide-y divide-gray-100 shadow h-[400px] flex items-center justify-between py-4"
+          >
+            <ul
+              class="py-1 text-md text-gray-700"
+              aria-labelledby="dropdownDefault"
+            >
+              <li>
+                <a
+                  href="./index3.html"
+                  class="block py-4 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Website
+                  <p class="text-xs text-gray-500">
+                    Start your professional website in minutes
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="./online_store/index.html"
+                  class="block py-4 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Online store
+                  <p class="text-xs text-gray-500">
+                    Start selling online with your own store
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-4 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Domain
+                  <p class="text-xs text-gray-500">
+                    Get your personalized domain for $0 in the first year
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-4 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Logo
+                  <p class="text-xs text-gray-500">
+                    Create your own customized logo
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-4 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Facebook & Instagram
+                  <p class="text-xs text-gray-500">
+                    Promote your business on Facebook and Instagram
+                  </p></a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="py-5 px-6"><a href="">Inspiration</a></li>
+        <li class="py-5 px-6"><a href="">Pricing</a></li>
+        <li class="py-5 px-6"><a href="">Blog</a></li>
+        <li class="py-5 px-6"><a href="">Features</a></li>
+      </div>
+      <!-- help log in -->
+      <div class="flex w-[200px] items-center hidden lg:flex">
+        <!-- help -->
+        <div class="">
+          <button
+            id="dropdownInformationButton"
+            data-dropdown-toggle="dropdownInformation"
+            class="text-black font-medium text-md px-6 py-2.5 text-center inline-flex items-center"
+            type="button"
+          >
+            Help
+            <svg
+              class="ml-2 w-4 h-4"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- Dropdown menu -->
+          <div
+            id="dropdownInformation"
+            class="hidden z-10 w-72 h-[300px] bg-white rounded shadow"
+          >
+            <div class="py-3 px-5 text-sm text-gray-900">
+              <div class="text-gray-600">How can we help you ?</div>
+            </div>
+            <ul
+              class="py-1 text-md text-black dark:text-gray-200"
+              aria-labelledby="dropdownInformationButton"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-6 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Help Center
+                  <p class="text-xs text-gray-500">
+                    Find answers to your questions
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-6 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Contact Support
+                  <p class="text-xs text-gray-500">
+                    Our support team is here for you
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- log in -->
+        <div class="list-none">
+          <li class="py-2 px-2">
+            <a href="">Log in</a>
+          </li>
+        </div>
+      </div>
+      <div class="lg:hidden">
+        <a href="./index2.html"
+          ><img class="w-[25px] h-[25px]" src="./images/menu (1).png" alt=""
+        /></a>
+      </div>
+    </div>
+    <!-- first container -->
+    <div class="bg-body w-full h-auto">
+      <div class="lg:flex lg:pt-12 lg:h-[300px]">
+        <div
+          class="w-11/12 lg:w-1/3 m-auto lg:h-[160px] text-4xl lg:ml-36 font-semibold lg:font-normal pt-10 lg:pt-0"
+        >
+          <span class="lg:text-7xl">Everything for your business</span>
+        </div>
+        <div
+          class="w-11/12 lg:w-[430px] m-auto text-md leading-6 lg:mr-48 font-light pt-10"
+        >
+          <p class="lg:text-xl">
+            Build a home online and let your customers find you. Jimdo has all
+            the digital tools you need to do this: for example: a customized,
+            legally safe website or an online store that's open 24/7.
+          </p>
+          <button
+            class="w-full h-[60px] bg-button text-sm lg:text-md text-white mt-10"
+          >
+            <a href="">Start Free</a>
+          </button>
+        </div>
+      </div>
+      <div class="mt-10">
+        <img class="w-full lg:hidden" src="./images/phone.webp" alt="" />
+        <img
+          class="hidden lg:flex w-full"
+          src="./images/compyuter.webp"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- second container -->
+    <div class="w-full bg-second_cont h-auto">
+      <div class="w-5/6 text-center m-auto pt-8 lg:w-2/3 lg:pt-20">
+        <h1 class="text-4xl lg:text-5xl">
+          <span class="text-4xl text-blue-600 lg:text-5xl font-semibold"
+            >Websites</span
+          >
+          without the effort
+        </h1>
+        <p class="pt-5 font-light lg:text-xl">
+          Design your website exactly how you want it—we provide everything you
+          need to get started.
+        </p>
+      </div>
+      <div class="lg:w-full lg:flex">
+        <div class="lg:w-5/6">
+          <video class="w-full pt-10" src="./video/justvideo.mp4 "></video>
+        </div>
+        <div
+          class="list-none lg:w-5/6 lg:mt-24 lg:h-[240px] lg:text-xl lg:font-medium pl-5 mt-4 flex flex-col h-[260px] justify-evenly font-semibold"
+        >
+          <li class="flex">
+            <img
+              class="w-[20px] h-[20px] mr-4 rounded-xl"
+              src="./images/right.jpeg"
+              alt=""
+            />
+            Make changes any time
+          </li>
+          <li class="flex">
+            <img
+              class="w-[20px] h-[20px] mr-4 rounded-xl"
+              src="./images/right.jpeg"
+              alt=""
+            />Add your own images and text
+          </li>
+          <li class="flex">
+            <img
+              class="w-[20px] h-[20px] mr-4 rounded-xl"
+              src="./images/right.jpeg"
+              alt=""
+            />Free images library and photo editing
+          </li>
+          <li class="flex">
+            <img
+              class="w-[20px] h-[20px] mr-4 rounded-xl"
+              src="./images/right.jpeg"
+              alt=""
+            />Flexible layouts
+          </li>
+          <li class="flex">
+            <img
+              class="w-[20px] h-[20px] mr-4 rounded-xl"
+              src="./images/right.jpeg"
+              alt=""
+            />Mobile-optimized for all screens
+          </li>
+          <span
+            class="mt-8 underline decoration-2 text-underline text-sm cursor-pointer"
+          >
+            <a href="#">
+              How to create a website
+              <i class="fa-solid fa-right-long pl-2"></i>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- third container -->
+    <div class="">
+      <div
+        class="w-full h-[220px] lg:h-[250px] bg-bluee text-white lg:pl-10 flex flex-col items-center justify-evenly"
+      >
+        <span class="lg:text-xl">Creat your website today</span>
+        <button class="w-1/2 bg-button_blue h-[60px] lg:w-1/6">
+          <a href="">Let's get started</a>
+        </button>
+      </div>
+      <div class="lg:w-full lg:flex">
+        <div class="w-full h-[560px]">
+          <div
+            class="w-5/6 h-[120px] lg:h-[150px] lg:mt-10 lg:ml-20 ml-5 flex flex-col justify-evenly mt-4"
+          >
+            <p class="text-2xl lg:text-3xl font-semibold">
+              <span class="text-blue-600 text-xl lg:text-3xl"> Selling </span>
+              made simple
+            </p>
+            <p class="lg:text-xl lg:font-light">
+              Create an independent online store—hassle-free.
+            </p>
+          </div>
+          <div
+            class="list-none w-full pl-5 lg:pl-0 h-[260px] lg:h-[300px] lg:text-lg lg:ml-20 text-md flex flex-col justify-evenly font-semibold"
+          >
+            <li class="flex">
+              <img
+                class="w-[20px] h-[20px] lg:w-[24px] lg:h-[24px] mr-2 rounded-xl"
+                src="./images/right.jpeg"
+                alt=""
+              />
+              No transaction fees (your products, your profit)
+            </li>
+            <li class="flex">
+              <img
+                class="w-[20px] h-[20px] lg:w-[24px] lg:h-[24px] mr-2 rounded-xl"
+                src="./images/right.jpeg"
+                alt=""
+              />
+              Offer shipping and local pickup options
+            </li>
+            <li class="flex">
+              <img
+                class="w-[20px] h-[20px] lg:w-[24px] lg:h-[24px] mr-2 rounded-xl"
+                src="./images/right.jpeg"
+                alt=""
+              />
+              Book appointments right on your site
+            </li>
+            <li class="flex">
+              <img
+                class="w-[20px] h-[20px] lg:w-[24px] lg:h-[24px] mr-2 rounded-xl"
+                src="./images/right.jpeg"
+                alt=""
+              />
+              Take payments via PayPal or Stripe
+            </li>
+            <li class="flex">
+              <img
+                class="w-[20px] h-[20px] lg:w-[24px] lg:h-[24px] mr-2 rounded-xl"
+                src="./images/right.jpeg"
+                alt=""
+              />Manage all your orders in one place
+            </li>
+            <li class="flex">
+              <img
+                class="w-[20px] h-[20px] lg:w-[24px] lg:h-[24px] mr-2 rounded-xl"
+                src="./images/right.jpeg"
+                alt=""
+              />
+              Sell on Instagram and Facebook
+            </li>
+            <li class="flex">
+              <img
+                class="w-[20px] h-[20px] lg:w-[24px] lg:h-[24px] mr-2 rounded-xl"
+                src="./images/right.jpeg"
+                alt=""
+              />
+              Boost your store with sales & discounts
+            </li>
+          </div>
+          <div
+            class="flex flex-col w-3/4 ml-5 h-[150px] lg:ml-20 justify-evenly mt-5"
+          >
+            <button class="w-full lg:w-3/4 h-[60px] bg-button_blue text-white">
+              <a href="">Let's get started</a>
+            </button>
+            <span
+              ><a
+                class="underline decoration-2 text-underline text-sm cursor-pointer"
+                href=""
+                >How to create an online store
+                <i class="fa-solid fa-right-long pl-2"></i></a
+            ></span>
+          </div>
+        </div>
+        <div class="lg:w-full">
+          <img
+            class="w-full h-[450px] lg:h-screen object-cover"
+            src="./images/manshop.webp"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <!-- fourth container -->
+    <div class="w-full bg-second_cont h-[800px]">
+      <div
+        class="w-5/6 lg:w-2/3 h-[250px] flex flex-col text-center items-center justify-evenly m-auto"
+      >
+        <p class="text-3xl lg:text-5xl font-semibold">
+          <span class="text-blue-600 text-3xl lg:text-5xl">Sites </span>worth
+          seeing
+        </p>
+        <p class="lg:text-xl">
+          Real people. Real websites. From artists to chefs, freelancers to
+          startups, check out what customers have already built with Jimdo.
+        </p>
+        <button class="w-1/2 lg:w-1/5 text-white h-[60px] bg-button_blue">
+          <a href="">More Examples</a>
+        </button>
+      </div>
+
+      <div
+        id="indicators-carousel"
+        class="relative overflow-hidden"
+        data-carousel="static"
+      >
+        <!-- Carousel wrapper -->
+        <div class="relative h-[420px]">
+          <!-- Item 1 -->
+          <div
+            class="hidden duration-700 ease-in-out h-[400px]"
+            data-carousel-item="active"
+          >
+            <img
+              src="./images/mobile_1.webp"
+              class="absolute block w-2/5 h-[300px] object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="./images/website_1.webp"
+              class="absolute block w-11/12 h-[300px] lg:w-1/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 3 -->
+          <div
+            class="hidden duration-700 ease-in-out h-[400px]"
+            data-carousel-item
+          >
+            <img
+              src="./images/mobile_2.webp"
+              class="absolute block w-2/5 h-[300px] object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 4 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="./images/website_2.webp"
+              class="absolute block w-11/12 h-[300px] lg:w-1/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 5 -->
+          <div
+            class="hidden duration-700 ease-in-out h-[400px]"
+            data-carousel-item
+          >
+            <img
+              src="./images/mobile_3.webp"
+              class="absolute block w-2/5 h-[300px] object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+        </div>
+        <!-- Slider indicators -->
+        <div
+          class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2"
+        >
+          <button
+            type="button"
+            class="w-5 h-5 rounded-full bg-button_blue border border-2 border-button_blue"
+            aria-current="true"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            class="w-5 h-5 rounded-full bg-button_blue border border-2 border-button_blue"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            class="w-5 h-5 rounded-full bg-button_blue border border-2 border-button_blue"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            class="w-5 h-5 rounded-full bg-button_blue border border-2 border-button_blue"
+            aria-current="false"
+            aria-label="Slide 4"
+            data-carousel-slide-to="3"
+          ></button>
+          <button
+            type="button"
+            class="w-5 h-5 rounded-full bg-button_blue border border-2 border-button_blue"
+            aria-current="false"
+            aria-label="Slide 5"
+            data-carousel-slide-to="4"
+          ></button>
+        </div>
+        <!-- Slider controls -->
+        <button
+          type="button"
+          class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-6 h-6 text-black"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-6 h-6 font-bold text-black"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+    </div>
+    <!-- fifth container -->
+    <div class="w-full bg-second_cont h-auto">
+      <div
+        class="h-[310px] w-11/12 lg:w-3/5 flex flex-col text-center m-auto items-center justify-evenly"
+      >
+        <p class="text-3xl w-3/4 lg:text-5xl font-semibold lg:w-3/5">
+          Make it
+          <span class="text-3xl text-underline lg:text-5xl font-semibold">
+            memorable</span
+          >
+          With a free logo
+        </p>
+        <p class="font-light lg:text-xl">
+          You're building your brand—now get a logo to match. Use our Logo
+          Creator to design your own business logo and download all the files
+          you need for digital and print. It's free to use.
+        </p>
+        <a
+          class="text-sm underline decoration-2 text-underline cursor-pointer lg:text-md"
+          href=""
+        >
+          How to create a logo
+          <i class="fa-solid fa-right-long pl-2"></i>
+        </a>
+      </div>
+      <div
+        class="grid grid-cols-2 ml-5 gap-y-4 lg:mt-10 lg:grid-cols-5 lg:ml-0 lg:w-3/4 lg:ml-44"
+      >
+        <div class="w-5/6 h-5/6  lg:w-[150px] h-[150px]">
+          <img class="" src="./images/logo_1.webp" alt="" />
+        </div>
+        <div class="w-5/6 h-5/6 lg:w-[150px] h-[150px]">
+          <img class="" src="./images/logo_2.webp" alt="" />
+        </div>
+        <div class="w-5/6 h-5/6 lg:w-[150px] h-[150px]">
+          <img class="" src="./images/logo_3.webp" alt="" />
+        </div>
+        <div class="w-5/6 h-5/6 lg:w-[150px] h-[150px]">
+          <img class="" src="./images/logo_4.webp" alt="" />
+        </div>
+        <div class="hidden lg:flex w-[150px] h-[150px]">
+          <img class="" src="./images/logo_5.webp" alt="" />
+        </div>
+      </div>
+      <div class="w-full flex justify-center mt-5">
+        <button
+          class="w-2/5 h-[50px] lg:w-[200px] border-2 border-blue-600 hover:bg-blue-600 hover:text-white text-blue-600"
+        >
+          <a href="">Try it free</a>
+        </button>
+      </div>
+    </div>
+    <!-- sixth container -->
+    <div class="bg-white flex flex-col m-5 lg:flex-row">
+      <div class="pt-10 lg:w-full lg:mr-10 lg:ml-5">
+        <img
+          class="w-full lg:h-[600px] object-contain"
+          src="./images/matze.webp"
+          alt=""
+        />
+      </div>
+      <div
+        class="w-full lg:h-[580px] lg:mt-12 lg:mr-5 lg:bg-light_blue lg:flex lg:flex-col lg:items-center lg:justify-center"
+      >
+        <p class="text-4xl lg:text-5xl lg:w-5/6">
+          <span class="text-underline text-4xl lg:text-5xl"> Independent </span>
+          but not alone
+        </p>
+        <p class="font-light text-center lg:w-5/6 lg:text-xl lg:text-left mt-6">
+          We're passionate about self-employed small business owners like you.
+          Helping you harness your power and thrive online has been our mission
+          from the beginning.
+        </p>
+      </div>
+    </div>
+    <!-- seventh container -->
+    <div
+      class="list-none grid grid-cols-2 lg:grid-cols-4 pl-10 w-full mt-10 lg:h-[280px] h-[400px] bg-second_cont pt-10 pb-10 leading-8 text-sm lg:text-base lg:font-medium lg:leading-10 font-semibold"
+    >
+      <div class="">
+        <li>
+          <a class="cursor-pointer hover:text-underline" href=""
+            >Company Website</a
+          >
+        </li>
+        <li>
+          <a class="cursor-pointer hover:text-underline" href=""
+            >Portfolio Website</a
+          >
+        </li>
+        <li>
+          <a class="cursor-pointer hover:text-underline" href=""
+            >Restaurant Website</a
+          >
+        </li>
+        <li>
+          <a class="cursor-pointer hover:text-underline" href=""
+            >Coaching Website</a
+          >
+        </li>
+        <li>
+          <a class="cursor-pointer hover:text-underline" href=""
+            >Website Builder</a
+          >
+        </li>
+      </div>
+      <div class="">
+        <li>
+          <a class="cursor-pointer hover:text-underline" href=""
+            >Local Business Website</a
+          >
+        </li>
+        <li>
+          <a class="cursor-pointer hover:text-underline" href=""
+            >Photography Website</a
+          >
+        </li>
+        <li>
+          <a class="cursor-pointer hover:text-underline" href=""
+            >Wedding Website</a
+          >
+        </li>
+        <li>
+          <a class="cursor-pointer hover:text-underline" href=""
+            >Real Estate Website</a
+          >
+        </li>
+        <li>
+          <a class="cursor-pointer hover:text-underline" href=""
+            >Artist Website</a
+          >
+        </li>
+      </div>
+      <div class="">
+        <li>
+          <a class="cursor-pointer hover:text-underline" href=""
+            >Freelancer Website</a
+          >
+        </li>
+        <li>
+          <a class="cursor-pointer hover:text-underline" href=""
+            >Fitness Website</a
+          >
+        </li>
+        <li>
+          <a class="cursor-pointer hover:text-underline" href=""
+            >Vacation Rental Website</a
+          >
+        </li>
+        <li>
+          <a class="cursor-pointer hover:text-underline" href=""
+            >Architecture Website</a
+          >
+        </li>
+        <li>
+          <a class="cursor-pointer hover:text-underline" href=""
+            >Author Website</a
+          >
+        </li>
+      </div>
+      <div class="">
+        <li>
+          <a class="cursor-pointer hover:text-underline" href=""
+            >Personal Website</a
+          >
+        </li>
+        <li>
+          <a class="cursor-pointer hover:text-underline" href=""
+            >Music & Bands Website</a
+          >
+        </li>
+        <li>
+          <a class="cursor-pointer hover:text-underline" href=""
+            >Medical Website</a
+          >
+        </li>
+        <li>
+          <a class="cursor-pointer hover:text-underline" href=""
+            >Salon Website</a
+          >
+        </li>
+        <li>
+          <a class="cursor-pointer hover:text-underline" href=""
+            >Teacher Website</a
+          >
+        </li>
+      </div>
+    </div>
+    <!-- eigth container -->
+    <div
+      class="w-full h-[220px] lg:h-[250px] bg-bluee text-white lg:pl-10 flex flex-col items-center justify-evenly"
+    >
+      <span class="lg:text-xl mt-4">Love your website from Day One</span>
+      <button class="w-1/2 bg-button_blue h-[60px] lg:w-1/6 mb-4">
+        <a class="" href="">Let's get started</a>
+      </button>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="w-full bg-white h-auto lg:hidden ">
+        <div class="">
+          <div class="">
+            <button
+            id="dropdownDefault"
+            data-dropdown-toggle="dropdown"
+            class="text-black font-medium text-md px-8 py-2.5 text-center inline-flex items-center"
+            type="button"
+          >
+            Products
+            <svg
+              class="ml-2 w-4 h-4"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <!-- Dropdown menu -->
+          <div
+            id="dropdown"
+            class="hidden z-10 w-5/6 bg-white rounded divide-y divide-gray-100 shadow h-[150px] flex items-center justify-between py-4"
+          >
+            <ul
+              class="py-1 text-md text-gray-700"
+              aria-labelledby="dropdownDefault"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-4 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Website
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-4 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Online store
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-4 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Domain
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-4 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Logo
+                 
+                </a>
+              </li>
+            </ul>
+          </div>
+          </div>
+          <div class="">
+            <button
+            id="dropdownDefault"
+            data-dropdown-toggle="dropdown"
+            class="text-black font-medium text-md px-8 py-2.5 text-center inline-flex items-center"
+            type="button"
+          >
+            About us
+            <svg
+              class="ml-2 w-4 h-4"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <!-- Dropdown menu -->
+          <div
+            id="dropdown"
+            class="hidden z-10 w-5/6 bg-white rounded divide-y divide-gray-100 shadow h-[150px] flex items-center justify-between py-4"
+          >
+            <ul
+              class="py-1 text-md text-gray-700"
+              aria-labelledby="dropdownDefault"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-4 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >About Jimdo
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-4 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Jobs
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-4 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Affiliates
+                </a>
+              </li>
+            </ul>
+          </div>
+          </div>
+          <div class="">
+            <button
+            id="dropdownDefault"
+            data-dropdown-toggle="dropdown"
+            class="text-black font-medium text-md px-8 py-2.5 text-center inline-flex items-center"
+            type="button"
+          >
+            Service
+            <svg
+              class="ml-2 w-4 h-4"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <!-- Dropdown menu -->
+          <div
+            id="dropdown"
+            class="hidden z-10 w-5/6 bg-white rounded divide-y divide-gray-100 shadow h-[150px] flex items-center justify-between py-4"
+          >
+            <ul
+              class="py-1 text-md text-gray-700"
+              aria-labelledby="dropdownDefault"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-4 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Jimdo Blog
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-4 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Insparation
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-4 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Help Center
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-4 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Contact Support
+                </a>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </div>
+        <div class="w-full h-[160px] flex items-center justify-center flex-col">
+           <div class="flex items-center m-auto w-full justify-center mt-8">
+        <h1
+          class="text-3xl font-extrabold w-1/3 h-[50px] font-sans border-4 border-black flex items-center justify-center"
+        >
+          <a href="./index.html">JIMDO</a>
+        </h1>
+      </div>
+          <div class="flex w-3/5 items-center justify-evenly">
+            <a class="text-3xl hover:text-underline" href=""><i class="fa-brands fa-facebook "></i></a>
+            <a class="text-3xl hover:text-underline" href=""><i class="fa-brands fa-twitter"></i></a>
+            <a class="text-3xl hover:text-underline" href=""><i class="fa-brands fa-instagram"></i></a>
+            <a class="text-3xl hover:text-underline" href=""><i class="fa-brands fa-youtube"></i></a>
+            <a class="text-3xl hover:text-underline" href=""><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+        <div class=" ">
+          <div class="flex items-center md:order-2 w-full h-auto flex items-center justify-center mt-10">
+      <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex text-black font-semibold items-center justify-center p-2 text-md rounded cursor-pointer ">
+        <svg class="w-6 h-6 mr-2 rounded-full border-2 border-blue-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3900 3900"><path fill="#b22234" d="M0 0h7410v3900H0z"/><path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300"/><path fill="#3c3b6e" d="M0 0h2964v2100H0z"/><g fill="#fff"><g id="d"><g id="c"><g id="e"><g id="b"><path id="a" d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"/><use xlink:href="#a" y="420"/><use xlink:href="#a" y="840"/><use xlink:href="#a" y="1260"/></g><use xlink:href="#a" y="1680"/></g><use xlink:href="#b" x="247" y="210"/></g><use xlink:href="#c" x="494"/></g><use xlink:href="#d" x="988"/><use xlink:href="#c" x="1976"/><use xlink:href="#e" x="2470"/></g></svg>
+        English
+      </button>
+      <!-- Dropdown -->
+      <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700" id="language-dropdown-menu">
+        <ul class="py-1" role="none">
+          <li>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+              <div class="inline-flex items-center">
+                <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us" viewBox="0 0 512 512"><g fill-rule="evenodd"><g stroke-width="1pt"><path fill="#bd3d44" d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/><path fill="#fff" d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/></g><path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)"/><path fill="#fff" d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z" transform="scale(3.9385)"/></g></svg>              
+                English 
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+              <div class="inline-flex items-center">
+                <svg class="h-3.5 w-3.5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de" viewBox="0 0 512 512"><path fill="#ffce00" d="M0 341.3h512V512H0z"/><path d="M0 0h512v170.7H0z"/><path fill="#d00" d="M0 170.7h512v170.6H0z"/></svg>
+                Deutsch
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+              <div class="inline-flex items-center">
+                <svg class="h-3.5 w-3.5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-it" viewBox="0 0 512 512"><g fill-rule="evenodd" stroke-width="1pt"><path fill="#fff" d="M0 0h512v512H0z"/><path fill="#009246" d="M0 0h170.7v512H0z"/><path fill="#ce2b37" d="M341.3 0H512v512H341.3z"/></g></svg>              
+                Italiano
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+              <div class="inline-flex items-center">
+                <svg class="h-3.5 w-3.5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn" viewBox="0 0 512 512"><defs><path id="a" fill="#ffde00" d="M1-.3L-.7.8 0-1 .6.8-1-.3z"/></defs><path fill="#de2910" d="M0 0h512v512H0z"/><use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-121 142.6 -47) scale(25.5827)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-98.1 198 -82) scale(25.6)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-74 272.4 -114) scale(25.6137)" xlink:href="#a"/><use width="30" height="20" transform="matrix(16 -19.968 19.968 16 256 230.4)" xlink:href="#a"/></svg>
+                中文 (繁體)
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+        </div>
+        <div class="list-none w-full h-[250px] flex flex-col items-center justify-evenly text-sm">
+          <li><a href="">Legal notice</a></li>
+          <li><a href="">Terms of Service</a></li>
+          <li><a href="">Refund Policy</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Cookie Settings</a></li>
+        </div>
+      </div>
+      </div>
+      <div class="hidden lg:block">
+      <div class=" bg-white h-[200px] w-full lg:flex ">
+        <div class="w-[300px] h-[180px] flex  justify-center flex-col ml-4 ">
+           <div class="flex items-center m-auto w-full ml-6 mt-8 cursor-pointer">
+        <h1
+          class="text-3xl font-extrabold w-[150px]  h-[50px] font-sans border-4 border-black flex items-center justify-center"
+        >
+          <a href="./index.html">JIMDO</a>
+        </h1>
+      </div>
+          <div class="flex w-full items-center justify-evenly">
+            <a class="text-3xl hover:text-underline" href="#"><i class="fa-brands fa-facebook "></i></a>
+            <a class="text-3xl hover:text-underline" href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a class="text-3xl hover:text-underline" href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a class="text-3xl hover:text-underline" href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a class="text-3xl hover:text-underline" href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="list-none flex w-2/3 h-auto itmes-center leading-8 mt-6 justify-evenly">
+          <div class="">
+            <span class="text-gray-600">Products</span>
+            <li><a class="hover:text-underline" href="">Website</a></li>
+            <li><a class="hover:text-underline" href="">Online Store</a></li>
+            <li><a class="hover:text-underline" href="">Domain</a></li>
+            <li><a class="hover:text-underline" href="">Logo</a></li>
+          </div>
+          <div class="">
+             <span class="text-gray-600">About us</span>
+            <li><a class="hover:text-underline" href="">About Jimdo</a></li>
+            <li><a class="hover:text-underline" href="">Jobs</a></li>
+            <li><a class="hover:text-underline" href="">Affiliates</a></li>
+          </div>
+          <div class="">
+            <span class="text-gray-600">Service</span>
+            <li><a class="hover:text-underline" href="">Jimdo Blog</a></li>
+            <li><a class="hover:text-underline" href="">Inspiration</a></li>
+            <li><a class="hover:text-underline" href="">Help Center</a></li>
+            <li><a class="hover:text-underline" href="">Contact Support</a></li>
+          </div>
+        </div>
+      </div>
+      <div class="">
+         <div class="list-none w-3/5 h-[250px] flex  items-center justify-evenly text-sm font-semibold">
+          <li><a class="hover:text-underline text-base" href="">Legal notice</a></li>
+          <li><a class="hover:text-underline text-base" href="">Terms of Service</a></li>
+          <li><a class="hover:text-underline text-base" href="">Refund Policy</a></li>
+          <li><a class="hover:text-underline text-base" href="">Privacy Policy</a></li>
+          <li><a class="hover:text-underline text-base"  href="">Cookie Settings</a></li>
+        </div>
+      </div>
+      </div>
+    </footer>
+  </body>
+</html>
